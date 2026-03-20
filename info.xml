@@ -18,13 +18,18 @@
   <version>1.0</version>
   <develStage>prof</develStage>
   <compatibility>
-    <ver>5.0</ver>
+    <ver>5.51</ver>
   </compatibility>
   <comments>Allows modifying the contribution Source field based on the 'source' query string parameter, if such is provided in the URL for a contribution page.</comments>
   <classloader>
     <psr4 prefix="Civi\" path="Civi"/>
+    <psr0 prefix="CRM_" path="."/>
   </classloader>
   <civix>
     <namespace>CRM/Irestweaks</namespace>
+    <format>25.10.2</format>
   </civix>
+  <mixins>
+    <mixin>scan-classes@1.0.0</mixin>
+  </mixins>
 </extension>
